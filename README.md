@@ -1,1 +1,1 @@
-/*Hey I'm starting to learn DSA here, welcome to my life, and enjoy!*/
+*Hey I'm starting to learn DSA here, welcome to my life, and enjoy!*
