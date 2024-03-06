@@ -1,21 +1,33 @@
 #include <iostream>
 using namespace std;
 
-int sum(int n){
-    int ans=0;
-    for(int i=0;i<=n;i++){
-        ans += i;
-    
+bool check(int x,int y,int z){
+    int a = max(x, max(y,z));
+    int b,c;
+    if (a==x){
+        b=y;
+        c=z;
     }
-    return ans;
+    else if(y==a){
+        b=x;
+        c=z;
+    }
+    else{
+        b=y;
+        c=x;
+    }
+    if (a*a==b*b+c*c){
+        return true;
+    }
+    else{
+        return false;
+    }
+    
 }
 
 int main(){
-    int n;
-    cin>>n;
-    int ans=sum(n);
-    cout<<ans<<endl;
-    return 0;
-
-
+    int x,y,z;
+    cin>>x>>y>>z;
+    check(x,y,z);
+    
 }
